@@ -1,0 +1,36 @@
+{
+  "name": "primitive-wrapper",
+  "version": "0.0.1",
+  "description": "Zeit Next Wrapper for primitive\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C the go app primitive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtKeller/primitive-wrapper.git"
+  },
+  "keywords": [
+    "lazy",
+    "loader",
+    "generator",
+    "wrapper",
+    "primitive",
+    "svg"
+  ],
+  "author": "micah t keller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtKeller/primitive-wrapper/issues"
+  },
+  "homepage": "https://github.com/mtKeller/primitive-wrapper#readme",
+  "dependencies": {
+    "next": "^4.1.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "gonode": "^0.1.2",
+    "node-sass-chokidar": "^0.0.3"
+  }
+}
