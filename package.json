@@ -4,7 +4,11 @@
   "description": "Zeit Next Wrapper for primitive\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C the go app primitive",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"node ./server.js\"  \"yarn run watch-css\"",
+    "build": "concurrently \"next build\"  \"yarn run build-css\"",
+    "start": "concurrently \"next start\"  \"yarn run watch-css\"",
+    "build-css": "node-sass-chokidar raw/scss -o static/css",
+    "watch-css": "npm run build-css && node-sass-chokidar raw/scss -o static/css --watch --recursive"
   },
   "repository": {
     "type": "git",
@@ -25,11 +29,33 @@
   },
   "homepage": "https://github.com/mtKeller/primitive-wrapper#readme",
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.1",
+    "apollo-client": "^2.0.3",
+    "apollo-link-http": "^1.2.0",
+    "axios": "^0.17.1",
+    "base64-to-image": "^1.0.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphiql": "^0.11.10",
+    "graphql": "^0.11.7",
+    "graphql-server-express": "^1.2.0",
+    "graphql-tools": "^2.7.2",
+    "http": "^0.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "lru-cache": "^4.1.1",
+    "lz-string": "^1.4.4",
+    "micro": "^9.0.1",
+    "micro-cors": "^0.0.4",
+    "mime": "^2.0.3",
     "next": "^4.1.4",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-apollo": "^2.0.1",
+    "react-dom": "^16.1.1",
+    "url": "^0.11.0"
   },
   "devDependencies": {
+    "concurrently": "^3.5.0",
     "node-sass-chokidar": "^0.0.3"
   }
 }
