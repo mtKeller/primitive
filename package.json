@@ -30,7 +30,6 @@
     "react-dom": "^16.1.1"
   },
   "devDependencies": {
-    "gonode": "^0.1.2",
     "node-sass-chokidar": "^0.0.3"
   }
 }
